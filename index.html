@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etch a sketch</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+<h1 id="heading">Etch-A-Sketch</h1>
+<div id="main-container">
+    <div class="drawingOptions">
+        <div id="slide_container">
+            <p id = 'size_text'>PlayArea Size</p>
+            <input id="density" class="slider" type="range" min="4" max="50">
+        </div>
+        <div id="button-container">
+            <button class="btn off" id="color-selector">Color Picker</button>
+            <input type="color" id="colorpicker" value="#0000ff">
+            <button class="btn off" id="black">Black</button>
+            <button class="btn off" id="psychedelic">Psychedelic</button>
+            <button class="btn off" id="eraser">Eraser</button>
+            <button class="btn off" id="clear">Clear</button>
+             <button class="btn off" id="reset">reset</button>
+        </div>
+    </div>
+    <div id="drawingBox"></div>
+
+</div>
+</body>
+</html>

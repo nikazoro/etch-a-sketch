@@ -1,0 +1,99 @@
+body {
+    background-color: #242830;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+}
+
+#heading {
+    font-size: 80px;
+    text-align: center;
+    color: chocolate;
+}
+
+/*DrawingPanel*/
+
+#drawingBox {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+
+.d-element {
+    border: 1px solid black;
+    background-color: white;
+}
+
+/*Button*/
+
+#button-container {
+    width: 500px;
+}
+
+.btn {
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.on {
+    background-color: darkgray;
+}
+
+.off {
+    background-color: peachpuff;
+}
+
+
+/*Slider Container */
+#slide_container {
+    width: 250px;
+    padding-left: 110px;
+    padding-bottom: 20px;
+    margin-right: 5px;
+}
+
+#slide_container p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 7px 0;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: red;
+    outline: none;
+    transform: rotate(180deg);
+    transition: 0.2s;
+    border-radius: 7px;
+}
+
+ /*Chrome*/
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Firefox */
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 17px;
+    background: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
