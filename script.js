@@ -34,7 +34,6 @@ function createDiv(width) {
         div.style.width = "100%"
         div.style.height = "100%"
         div.addEventListener("mouseover", () => drawingHover(div))
-        div.addEventListener("touchmove", () => drawingHover(div))
         drawingBox.appendChild(div)
     }
 }
